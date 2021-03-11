@@ -345,7 +345,9 @@ TPL;
 
         unset($logs);
 
-        rsort($parsed);
+        //rsort($parsed);
+        $parsed = array_reverse($parsed);
+        
 
         return $parsed;
     }
